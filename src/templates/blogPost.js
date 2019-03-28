@@ -6,9 +6,12 @@ const Template = ({data, pageContext}) => {
   const { markdownRemark } = data;
   const title = markdownRemark.frontmatter.title;
   const html = markdownRemark.html
+  const image = markdownRemark.frontmatter.image ? markdownRemark.frontmatter.image.childImageSharp.fluid.src : null;
+
   return (
     <div>
       <h1>{title}</h1>
+      {image ? <img src={image}/> : null}
       <div className="blogpost" dangerouslySetInnerHTML={{__html: html}} />
       {next && <Link to={next.frontmatter.path}>Next</Link>}
       {prev && <Link to={prev.frontmatter.path}>Prev</Link>}
@@ -21,6 +24,16 @@ export const query = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid
+            }
+            resize(width: 500, height: 500) {
+              src
+            }
+          }
+        }
       }
     }
   }
