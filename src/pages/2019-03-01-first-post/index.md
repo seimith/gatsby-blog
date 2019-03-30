@@ -4,7 +4,7 @@ date: '2019-03-01'
 title: 'My first post'
 tags: ['first', 'thing']
 excerpt: 'A preview of my first post'
-image: 'gene.png'
+featuredImage: 'gene.png'
 ---
 
 Lorem ispum.

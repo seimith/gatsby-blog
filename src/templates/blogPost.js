@@ -6,7 +6,7 @@ const Template = ({data, pageContext}) => {
   const { markdownRemark } = data;
   const title = markdownRemark.frontmatter.title;
   const html = markdownRemark.html
-  const image = markdownRemark.frontmatter.image ? markdownRemark.frontmatter.image.childImageSharp.fluid.src : null;
+  const image = markdownRemark.frontmatter.featuredImage ? markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.src : null;
 
   return (
     <div>
@@ -24,7 +24,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        image {
+        featuredImage {
           childImageSharp {
             fluid(maxWidth: 700) {
               ...GatsbyImageSharpFluid
