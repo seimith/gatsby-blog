@@ -6,18 +6,19 @@ const Template = ({data, pageContext}) => {
   const { markdownRemark } = data;
   const title = markdownRemark.frontmatter.title;
   const html = markdownRemark.html
-  const image = markdownRemark.frontmatter.featuredImage ? markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.src : null;
+  const featuredImage = markdownRemark.frontmatter.featuredImage ? markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.src : null;
 
   return (
     <div>
       <h1>{title}</h1>
-      {image ? <img src={image}/> : null}
+      featuredImage: [ {featuredImage ? <img src={featuredImage}/> : null} ]
       <div className="blogpost" dangerouslySetInnerHTML={{__html: html}} />
       {next && <Link to={next.frontmatter.path}>Next</Link>}
       {prev && <Link to={prev.frontmatter.path}>Prev</Link>}
     </div>
   )
 };
+
 export const query = graphql`
   query($pathSlug: String!) {
     markdownRemark(frontmatter: { path: {eq: $pathSlug} }) {
@@ -37,5 +38,5 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 export default Template;

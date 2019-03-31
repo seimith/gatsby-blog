@@ -16,7 +16,20 @@ module.exports = {
         name: `pages`,
         path: `${__dirname}/src/pages`
       }
-    }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 200,
+            },
+          },
+        ],
+      },
+    },
   ]
 }
 

@@ -17,6 +17,7 @@
     "gatsby-image": "^2.0.35",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-remark-images": "^3.0.11",
     "gatsby-source-filesystem": "^2.0.27",
     "gatsby-transformer-remark": "^2.3.4",
     "gatsby-transformer-sharp": "^2.1.17",
