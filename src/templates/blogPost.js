@@ -11,7 +11,7 @@ const Template = ({data, pageContext}) => {
   return (
     <div>
       <h1>{title}</h1>
-      featuredImage: [ {featuredImage ? <img src={featuredImage}/> : null} ]
+      {featuredImage ? <img src={featuredImage}/> : null}
       <div className="blogpost" dangerouslySetInnerHTML={{__html: html}} />
       {next && <Link to={next.frontmatter.path}>Next</Link>}
       {prev && <Link to={prev.frontmatter.path}>Prev</Link>}

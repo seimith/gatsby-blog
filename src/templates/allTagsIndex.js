@@ -5,6 +5,7 @@ const AllTagsTemplate = ({data, pageContext}) => {
   const { tags } = pageContext;
   return (
     <div>
+      <h1>All Tags</h1>
       <ul>
         {tags.map((tagName, index) => {
           return (

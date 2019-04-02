@@ -6,13 +6,14 @@ const Layout = ({data}) => {
   const { edges } = data.allMarkdownRemark
   return (
     <div>
+      <h2>Index</h2>
       <Header/>
       {edges.map(edge => {
         const { frontmatter } = edge.node;
         return (
           <div key={frontmatter.path}>
             <Link to={frontmatter.path}>
-              {frontmatter.title}
+              {frontmatter.date} - {frontmatter.title}
             </Link>
           </div>
         )
