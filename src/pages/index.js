@@ -15,6 +15,7 @@ const Layout = ({data}) => {
             <Link to={frontmatter.path}>
               {frontmatter.date} - {frontmatter.title}
             </Link>
+            <p>{frontmatter.excerpt}</p>
           </div>
         )
       })}
@@ -40,6 +41,7 @@ export const query = graphql`
             title
             path
             date
+            excerpt
           }
         }
       }
