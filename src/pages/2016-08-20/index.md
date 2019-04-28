@@ -3,6 +3,7 @@ path: '/2016-08-20'
 date: '2016-08-20'
 title: '(Swift) Create Navigation with Multiple Pages with only Storyboard'
 tags: ['swift', 'navigation', 'views', 'tutorial']
+categories: ['code']
 excerpt: 'After one week of playing around with Swift I have some opinions...'
 ---
 

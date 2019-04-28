@@ -3,6 +3,7 @@ path: '/2016-08-12'
 date: '2016-08-12'
 title: '(React-Native) Nesting Navigator inside TabBarIOS for ultimate history stack'
 tags: ['react-native', 'snippet', 'ios']
+categories: ['code']
 excerpt: 'A few weeks ago I started working on react-native and...'
 ---
 

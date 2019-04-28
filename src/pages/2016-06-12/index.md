@@ -3,6 +3,7 @@ path: '/2016-06-12'
 date: '2016-06-12'
 title: 'Sublime User Preferences'
 tags: ['install', 'shortcuts']
+categories: ['code']
 excerpt: 'I do not like to customize my Sublime much but...'
 ---
 

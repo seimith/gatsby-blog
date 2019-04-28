@@ -3,6 +3,7 @@ path: '/2016-08-07'
 date: '2016-08-07'
 title: 'GitHub gitignore files for all'
 tags: ['freebie', 'github', 'gitignore']
+categories: ['code']
 excerpt: 'Whenever I start a project I always think to myself, "What the heck do I ignore?"'
 ---
 

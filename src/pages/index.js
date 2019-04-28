@@ -22,6 +22,8 @@ const Layout = ({data}) => {
 
       <div>
         <Link to='/tags'>Browse by Tag</Link>
+        <br/>
+        <Link to='/categories'>Browse by categories</Link>
       </div>
     </div>
   )

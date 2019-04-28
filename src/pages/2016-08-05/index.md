@@ -3,6 +3,7 @@ path: '/2016-08-05'
 date: '2016-08-05'
 title: 'Edit Github Author For Past Commits'
 tags: ['snippet', 'shortcuts']
+categories: ['code']
 excerpt: 'So a whiles back I was working on a project on my new laptop...'
 ---
 

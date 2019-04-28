@@ -3,6 +3,7 @@ path: '/2016-06-11'
 date: '2016-06-11'
 title: 'New Laptop Installfest'
 tags: ['install']
+categories: ['code']
 excerpt: 'So I recently purchased a laptop and need to install everything...'
 ---
 

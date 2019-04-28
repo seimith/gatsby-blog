@@ -3,6 +3,7 @@ path: '/2016-06-13'
 date: '2016-06-13'
 title: 'Looping Through Files'
 tags: ['snippet', 'bash', 'loop']
+categories: ['code']
 excerpt: 'So the other day I needed to loop...'
 ---
 
