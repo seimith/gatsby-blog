@@ -1,6 +1,6 @@
 ---
-path: '/2016-08-28'
-date: '2016-08-28'
+path: '/2016-09-10'
+date: '2016-09-10'
 title: '(Swift) Specifiying By Tags'
 tags: ['swift', 'uiview', 'views', 'tutorial', 'tags']
 categories: ['code']
