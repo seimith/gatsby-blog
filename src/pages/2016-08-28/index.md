@@ -13,7 +13,7 @@ Anywho, you might just need to animate a loading spinner thing or something for 
 
 In this case, I've just created a few UIViews and added animation to it. If you want, you can even just use a UIImage component and spin that instead.
 
-![alt text](https://raw.githubusercontent.com/seimith/seimith.github.io/master/_assets/2016-08-28-assets/RotatingUIViewSmall.gif "Rotating UIViews")
+!["Rotating UIViews"](https://raw.githubusercontent.com/seimith/seimith.github.io/master/_assets/2016-08-28-assets/RotatingUIViewSmall.gif "Rotating UIViews")
 
 **Tools:**
 
@@ -23,7 +23,7 @@ In this case, I've just created a few UIViews and added animation to it. If you 
 **Step 1: Create swift project**
 Create a “Single View Application” project. If you don’t want extra folders in your project for testing, make sure you uncheck the items for tests.
 
-![alt text](img1.png "Creating a single page application")
+!["Creating a single page application"](img1.png "Creating a single page application")
 
 **Step 2: Add `UIView` to storyboard**
 Search up the UIView component in the bottom left corner of Xcode and drag it into your storyboard.
@@ -31,26 +31,26 @@ Search up the UIView component in the bottom left corner of Xcode and drag it in
 After adding the component to your storyboard, change it’s color so that you can see it. It will default to white which can be difficult to see.
 
 If you run this in the simulator at this point, all sorts of misalignments will happen here. This is because there are no constraints.
-![alt text](img2.png "Drag in a UIView")
+!["Drag in a UIView"](img2.png "Drag in a UIView")
 
 **Step 3: Add constraints***
 The first set of constraints that we’ll add here are “horizontal” and “vertical” constraints.
 
 To do this make sure you have your UIView selected and then locate the icon at the bottom left of Xcode (look for the icon that look like sideways bar graphs). Then, check off the corresponding checkboxes.
 
-![alt text](img3.png "Add aligning constraints to UIView")
+!["Add aligning constraints to UIView"](img3.png "Add aligning constraints to UIView")
 
 The second set of constraints will be to give it a “width” and “height” constraint. To do this you need to find the square “Tie-fighter” icon at the bottom left of Xcode.
 
-![alt text](img4.png "Add width and height constraints to UIView")
+!["Add width and height constraints to UIView"](img4.png "Add width and height constraints to UIView")
 
 Once you add these two sets of constraints you’ll get a warning in the “Document Outline Panel”. Resolve these warnings as it will fix the placement of your UIView in your storyboard.
 
-![alt text](https://raw.githubusercontent.com/seimith/seimith.github.io/master/_assets/2016-08-28-assets/img5.gif "Fix constraint warnings")
+!["Fix constraint warnings"](https://raw.githubusercontent.com/seimith/seimith.github.io/master/_assets/2016-08-28-assets/img5.gif "Fix constraint warnings")
 
 At this point if you run this in the simulator you’ll see that the UIView is centered in the middle of the screen in all rotations.
 
-![alt text](https://raw.githubusercontent.com/seimith/seimith.github.io/master/_assets/2016-08-28-assets/img6.gif "Simulator of UIView in the middle of the device")
+!["Simulator of UIView in the middle of the device"](https://raw.githubusercontent.com/seimith/seimith.github.io/master/_assets/2016-08-28-assets/img6.gif "Simulator of UIView in the middle of the device")
 
 **Step 4: Create and connect IBOutlets to your controller**
 Now that you have your UIView set up, it’s time to create an “IBOutlet”. This is kind of like a variable that exists in the “Interface Builder” and gets connected to your code.
@@ -90,7 +90,7 @@ You should also notice that there is a tiny unfilled dot next to your `IBOutlet`
 
 To connect your newly created `IBOutlet` go back to your storyboard and then click on your view controller. Make sure you have your `Utilities` panel (right panel icon) open. Here, you will see that there is a list of outlets with unfilled dots as well. This is where you can click + drag to connect them. The dot should now be filled in.
 
-![alt text](img7.png "Connect IBOutlet from utilities panel")
+!["Connect IBOutlet from utilities panel"](img7.png "Connect IBOutlet from utilities panel")
 
 ***Version 2*** Open your storyboard and click on `Show Assistant Editor` (this is the venn-diagram-looking icon in the top of Xcode).
 
@@ -98,9 +98,9 @@ To connect your newly created `IBOutlet` go back to your storyboard and then cli
 Ctrl + Click drag the UIView into your class and then name it. The dot should not be filled in.
 ```
 
-![alt text](img8.png "Connect IBOutlet from your storyboard")
+!["Connect IBOutlet from your storyboard"](img8.png "Connect IBOutlet from your storyboard")
 
-![alt text](img9.png "Connect IBOutlet from your storyboard")
+!["Connect IBOutlet from your storyboard"](img9.png "Connect IBOutlet from your storyboard")
 
 **Step 5: Add code to rotate forever**
 In this example, we’re adding animation to spin a `UIView` once the app loads. To do that, we’ll create a function, then call that function within the `viewDidLoad` lifecycle function.

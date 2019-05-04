@@ -25,7 +25,7 @@ To give your item a tag,
 > Give it a unique number
 ```
 
-![alt text](img1.png "Giving a UIView a tag")
+!["Giving a UIView a tag"](img1.png "Giving a UIView a tag")
 
 Once you assign something with a tag you can then look it up by that tag and then augment it.
 
