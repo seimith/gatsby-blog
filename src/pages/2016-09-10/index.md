@@ -31,7 +31,7 @@ Once you assign something with a tag you can then look it up by that tag and the
 
 Here is an example:
 
-```
+```swift{numberLines: true}
 if let theLabel = self.view.viewWithTag(1) as? UILabel {
   theLabel.text = "I'm replacing text here"
 }

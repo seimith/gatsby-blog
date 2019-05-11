@@ -35,7 +35,7 @@ fi
 
 After you do that, force update your project.
 
-```
+```bash{numberLines: true}
 git push --force --tags origin 'refs/heads/*'
 ```
 

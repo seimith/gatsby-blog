@@ -26,7 +26,7 @@ In this example, we’re adding animation to slide a `UIView` once the app loads
 
 This is the function that contains the animation.
 
-```
+```swift{numberLines: true}
 func beginAnimation () {
   // 1st transformation
   self.uiViewToSlide.transform = CGAffineTransformMakeTranslation(0, -100)
@@ -64,7 +64,7 @@ self.beginAnimation()
 
 Your file should look similar to this:
 
-```
+```swift{numberLines: true}
 import UIKit
 
 class ViewController: UIViewController {

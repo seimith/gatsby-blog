@@ -67,7 +67,7 @@ There are multiple ways of creating an “IBOutlet”. These are the two ways th
 
 Your code should look something like this:
 
-```
+```swift{numberLines: true}
 import UIKit
 
 class ViewController: UIViewController {
@@ -107,7 +107,7 @@ In this example, we’re adding animation to spin a `UIView` once the app loads.
 
 This is the function that contains the animation.
 
-```
+```swift{numberLines: true}
 func beginAnimation () {
   UIView.animateWithDuration(1.0, delay: 0, options: .CurveLinear, animations: { () -> Void in
     self.mySpinnerView.transform = CGAffineTransformRotate(self.mySpinnerView.transform, CGFloat(M_PI))
@@ -125,7 +125,7 @@ self.beginAnimation()
 
 Your file should look like this:
 
-```
+```swift{numberLines: true}
 import UIKit
 
 class ViewController: UIViewController {

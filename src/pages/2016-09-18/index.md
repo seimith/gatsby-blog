@@ -24,7 +24,7 @@ In this example, we’re adding animation to pulse a `UIView` once the app loads
 
 This is the function that contains the animation.
 
-```
+```swift{numberLines: true}
 func beginAnimation () {
   // code for animation
 }
@@ -35,7 +35,7 @@ There are a couple of ways to animate your UIView to make it pulse. Below are 3 
 **Version 1: Pulsate 3x**
 I haven't used this technique to animate things in my personal projects so I don't have any strong opinions as to whether or not it's a better way to animate, but here it is...
 
-```
+```swift{numberLines: true}
 let scaleAnimation:CABasicAnimation = CABasicAnimation(keyPath: "transform.scale")
 scaleAnimation.duration = 1.0
 scaleAnimation.repeatCount = 3.0
@@ -54,7 +54,7 @@ Adding `.Autoreverse` will perform the reverse of the animation and help make th
 
 The `completion` block is `nil` because I want my UIView to animate forever. Nobody would want their UIView to animate forever, but for this example why not?
 
-```
+```swift{numberLines: true}
 UIView.animateWithDuration(1.0, delay:0, options: [.Repeat, .Autoreverse], animations: {
     self.uiViewToPulsate.transform = CGAffineTransformMakeScale(1.2, 1.2)
 }, completion: nil)
@@ -69,7 +69,7 @@ Then, the `completion` block is important to have to make the animation "reset" 
 
 Having `self.uiViewToPulsate.transform = CGAffineTransformMakeScale(1, 1)` within the `completion` block makes it such that once the animation is completed, the UIView will transition to it's original size at 1x.
 
-```
+```swift{numberLines: true}
 UIView.animateWithDuration(1.0, delay:0, options: [.Repeat, .Autoreverse], animations: {
     UIView.setAnimationRepeatCount(3)
     self.uiViewToPulsate.transform = CGAffineTransformMakeScale(1.2, 1.2)
@@ -81,13 +81,13 @@ UIView.animateWithDuration(1.0, delay:0, options: [.Repeat, .Autoreverse], anima
 
 Add the code in your `viewDidLoad` to start the pulse
 
-```
+```swift{numberLines: true}
 self.beginAnimation()
 ```
 
 Your file should look similar to this:
 
-```
+```swift{numberLines: true}
 import UIKit
 
 class ViewController: UIViewController {

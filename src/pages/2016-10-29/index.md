@@ -13,7 +13,7 @@ Read more about SIP here: [https://support.apple.com/en-us/HT204899][link]
 
 The other day I was trying to run `gem install bundler` and got a permissions error. Not cool.
 
-```
+```bash{numberLines: true}
 gem install bundler
 
 Fetching: bundler-1.13.6.gem (100%)
@@ -23,7 +23,7 @@ You don't have write permissions for the /usr/bin directory.
 
 Try installing to your directory:
 
-```
+```bash{numberLines: true}
 gem install bundler -n /usr/local/bin
 ```
 
