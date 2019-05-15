@@ -4,7 +4,7 @@ date: '2016-09-11'
 title: '(App/Extension) GIPHY'
 tags: ['app', 'gif']
 categories: ['design']
-excerpt: 'This tutorial is about spinning UIViews. Why spinning things you might ask?'
+excerpt: 'I wanted to give a shoutout to a cool app ...'
 ---
 
 I wanted to give a shoutout to a cool app that I recently downloaded from the app store. It's called GIPHY and I use it to create gifs of what I'm doing.

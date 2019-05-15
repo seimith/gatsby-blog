@@ -4,7 +4,7 @@ date: '2016-09-10'
 title: '(Swift) Specifiying By Tags'
 tags: ['swift', 'uiview', 'views', 'tutorial', 'tags']
 categories: ['code']
-excerpt: 'This tutorial is about spinning UIViews. Why spinning things you might ask?'
+excerpt: 'In Swift, you can add items to your storyboard and refer to it in your code...'
 ---
 
 In Swift, you can add items to your storyboard and refer to it in your code. For example, you can add a UIButton and then create an IBOutlet in your code to 'connect' to it.

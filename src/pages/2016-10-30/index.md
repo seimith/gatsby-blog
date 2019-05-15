@@ -4,7 +4,7 @@ date: '2016-10-30'
 title: '(Swift) UIImage to Base64'
 tags: ['swift', 'snippet']
 categories: ['code']
-excerpt: 'This tutorial is about spinning UIViews. Why spinning things you might ask?'
+excerpt: 'I recently had a project where I needed to convert my image to base64...'
 ---
 
 I recently had a project where I needed to convert my image to base64. With JavaScript it's relatively easy and since I was new to Swift I had no idea how to do this.

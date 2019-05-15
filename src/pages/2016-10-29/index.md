@@ -4,7 +4,7 @@ date: '2016-10-29'
 title: 'Unable to run gem install XYZ on OS X El Capitan'
 tags: ['gem', 'el capitan', 'install', 'troubleshoot']
 categories: ['code']
-excerpt: 'This tutorial is about spinning UIViews. Why spinning things you might ask?'
+excerpt: 'If you've upgraded your computer to El Capitan and you're getting errors...'
 ---
 
 If you've upgraded your computer to El Capitan and you're getting errors while trying to install some gems, this is due to  El Capitan's introduction of SIP (System Integrity Protection).

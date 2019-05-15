@@ -4,7 +4,7 @@ date: '2016-09-18'
 title: '(Swift) Pulsating UIView'
 tags: ['swift', 'uiview', 'views', 'tutorial', 'animation']
 categories: ['code']
-excerpt: 'This tutorial is about spinning UIViews. Why spinning things you might ask?'
+excerpt: 'This tutorial is very similar to my prievious post about rotating UIViews...'
 ---
 
 This tutorial is very similar to my prievious post about [rotating UIViews](http://seimith.github.io/swift/uiview/views/tutorial/animation/2016/08/28/Swift-Rotating-UIView.html "Post on rotating UIViews"), but this is how to do pulsating animations. You might need this type of animation for a loader, an onTap of a button, or whatever.
