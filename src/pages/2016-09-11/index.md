@@ -15,4 +15,4 @@ There is an editing feature and it is super simple! It has options to cut the be
 
 I totally recommend it! [Get GIPHY on iTunes!](https://itunes.apple.com/us/app/giphy-capture.-the-gif-maker/id668208984?mt=12 "GIPHY")
 
-![alt text](img1.png "GIPHY app")
+!["GIPHY app"](img1.png "GIPHY app")

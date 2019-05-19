@@ -14,7 +14,7 @@ There are a few generic segues that are available to use in Xcode, however, you 
 In this case, the animation in play will be a sliding one (great for swiping).
 
 
-![alt text](https://raw.githubusercontent.com/seimith/seimith.github.io/master/_assets/2016-11-05-assets/CustomSegue.gif "Custom segue")
+!["Custom segue"](https://raw.githubusercontent.com/seimith/seimith.github.io/master/_assets/2016-11-05-assets/CustomSegue.gif "Custom segue")
 
 **Tools:**
 
@@ -24,18 +24,18 @@ In this case, the animation in play will be a sliding one (great for swiping).
 **Step 1: Create swift project**
 Create a “Single View Application” project. If you don’t want extra folders in your project for testing, make sure you uncheck the items for tests.
 
-![alt text](1.png "Creating a single page application")
+!["Creating a single page application"](1.png "Creating a single page application")
 
-![alt text](2.png "Creating a single page application")
+!["Creating a single page application"](2.png "Creating a single page application")
 
 **Step 2: Create your segue**
 I made a bit of a mistake here in naming my class with lowercase, "firstCustomSegue". However, this example works just find.
 
 Make sure to select `UIStoryboardSegue` as the subclass and Swift as the language.
 
-![alt text](3.png "Creating a new file for your segue")
+!["Creating a new file for your segue"](3.png "Creating a new file for your segue")
 
-![alt text](4.png "Naming your segue file")
+!["Naming your segue file"](4.png "Naming your segue file")
 
 The following is the code + comments for the custom segue explaining each section.
 
@@ -82,20 +82,20 @@ Make sure to update the subclass to `UIViewController`.
 
 You don't need to add anything in the second view controller.
 
-![alt text](5.png "Creating a new view controller")
+!["Creating a new view controller"](5.png "Creating a new view controller")
 
 **Step 4: Add a second UIView controller to the storyboard**
 Now that I've created a second view controller I need to add a new view controller.
 
 This can be done via the `Main.storyboard` and by searching for `View Controller` and dragging it onto the board.
 
-![alt text](6.png "Adding a second UIView controller")
+!["Adding a second UIView controller"](6.png "Adding a second UIView controller")
 
 Once you do that you need to reassign the view controller "controlling" that new view.
 
 Make sure you update the class to the `SecondViewController`.
 
-![alt text](13.png "Reassigning the controller for the new UIView controller")
+!["Reassigning the controller for the new UIView controller"](13.png "Reassigning the controller for the new UIView controller")
 
 **Step 5: Differentiating the scenes, adding a button and its constraints**
 Here, I've added different background colors to my views so I can visually differentiate the two scenes that I want to segue between.
@@ -109,20 +109,20 @@ In terms of constraints, I've added a total of 4 constraints to my button:
 - Horizontally in Container
 - Vertically in Container
 
-![alt text](7.png "Adding constraints: height, width")
+!["Adding constraints: height, width"](7.png "Adding constraints: height, width")
 
-![alt text](8.png "Adding constraints: horizontal, vertical")
+!["Adding constraints: horizontal, vertical"](8.png "Adding constraints: horizontal, vertical")
 
 **Step 6: Setting the custom segue**
 This is where you finally add the segue.
 
-![alt text](9.png "Setting the custom segue")
+!["Setting the custom segue"](9.png "Setting the custom segue")
 
 On a Mac, `control + click + drag`, from the button to the second view controller and you will get `Action Segue` selections.
 
 Select `Custom`. (Although I see my custom segue class name in the list, `first custom`, selecting this has not worked for me.)
 
-![alt text](11.png "Selecting your custom segue")
+!["Selecting your custom segue"](11.png "Selecting your custom segue")
 
 Now, click on the segue representation on the storyboard (the thing with the bracket icon connecting the two view controllers) and remember to update the following:
 
@@ -130,7 +130,7 @@ Now, click on the segue representation on the storyboard (the thing with the bra
 - Class
 - Kind (should already be `Custom`)
 
-![alt text](12.png "Updating segue")
+!["Updating segue"](12.png "Updating segue")
 
 And that should be it. When you load your simulator you should be able to segue by "sliding" between two scenes!
 
