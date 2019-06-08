@@ -1,3 +1,81 @@
-html {
-  font-family: Arial;
+body {
+  font-family: "Courier New";
+  font-size: 14px;
+
+   a:visited {
+    color: #367588;
+  }
+
+  .avatar {
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
+    float: left;
+    margin: 0px 15px 0px 0px;
+  }
+
+  .media-object {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 500px;
+    height: 175px;
+
+    h1 {
+      margin-top: 5px;
+    }
+  }
+
+  .special-treat {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .post {
+    max-width: 850px;
+
+    .post-content {
+      img {
+        width: 20%;
+        height: 20%;
+      }
+
+      .highlight {
+        max-width: 850px;
+        padding: 32px;
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+@media (max-width : 520px) {
+  body {
+    font-size: 16px;
+
+    H1 {
+      margin: 4px 0 0 0;
+    }
+
+    p {
+      margin: 12px 0 0 0;
+    }
+
+    .avatar {
+      border-radius: 3px;
+      float: none;
+    }
+
+    .media-object {
+      width: unset;
+      float: none;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      transform: translate(0%, 0%);
+      padding: 10px;
+    }
+  }
 }
