@@ -51,3 +51,6 @@ The following below are the things that I installed. There's no order of signifi
 
 - **heroku cli**
   I like to deploy my projects to Heroku. It's fast and easy to get spinning up.
+
+- **f.lux**
+  For sensitive eyes.
