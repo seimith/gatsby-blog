@@ -13,7 +13,7 @@ const Layout = ({data}) => {
         return (
           <div key={frontmatter.path}>
             <Link to={frontmatter.path}>
-              {frontmatter.date} - {frontmatter.title}
+              {frontmatter.title}
             </Link>
             <p>{frontmatter.excerpt}</p>
           </div>
