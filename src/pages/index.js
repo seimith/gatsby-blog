@@ -7,7 +7,7 @@ const Layout = ({data}) => {
   return (
     <div>
       <div class="media-object">
-        <img src="//raw.githubusercontent.com/seimith/seimith.github.io/master/_assets/me.jpg" alt="Me doing things." class="avatar"/>
+        <img src={'assets/me.jpg'} alt="Me doing things." class="avatar"/>
         <h1>Kaixo!</h1>
         <p>I <Link to='/categories/code' title='Technical posts.'>code</Link> some <Link to='/tags' title='All post categories.'>things</Link>, I <Link to='/categories/design' title='Design related posts.'>design</Link> sometimes, and I <a href="#" class="weekend">do random stuff</a> on the weekends.</p>
         <p>On <a href="https://twitter.com/themcsuth/" target="_blank" title="Twitter.">social</a> media I'm pretty dead.</p>
