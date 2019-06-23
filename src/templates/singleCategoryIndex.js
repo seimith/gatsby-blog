@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 
 const SingleCategoryTemplate = ({data, pageContext}) => {
   const { posts, categoryName } = pageContext;
-  debugger
   return (
     <div>
       <div>
