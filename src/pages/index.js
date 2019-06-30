@@ -5,7 +5,6 @@ const randomMe = () => {
   var avatar = [
     {url: 'assets/me1.png'},
     {url: 'assets/me2.jpg'},
-    {url: 'assets/me3.png'},
   ];
   var randomIndex = Math.floor(Math.random() * avatar.length - 1) + 1;
   var imageSource = avatar[randomIndex].url;
