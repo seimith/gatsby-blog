@@ -46,7 +46,6 @@ const randomWeekendCrap = () => {
   ];
   var weekendSelector = document.querySelector('.weekend');
   var randomWeekendIndex = Math.floor(Math.random() * randomWeekendActivities.length - 1) + 1;
-  weekendSelector.innerText = randomWeekendActivities[randomWeekendIndex].title
   weekendSelector.href = randomWeekendActivities[randomWeekendIndex].url;
 }
 
