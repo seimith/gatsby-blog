@@ -26,6 +26,7 @@ const getYoTreat = () => {
     {title: "Dinty Moore's 1990 Ad", url: 'https://www.youtube.com/watch?v=ky33W2QQjWo'},
     {title: "Dinty Moore's 1994 Ad", url: 'https://www.youtube.com/watch?v=VJdaKA7b0jY'},
     {title: "Pork Brains & Eggs", url: 'https://www.youtube.com/watch?v=h9KWgp8Jmpw'},
+    {title: "Dubuque Ham", url: 'https://www.youtube.com/watch?v=uPAbuEpGhII'},
   ];
   var randomIndex = Math.floor(Math.random() * randomVideos.length - 1) + 1;
   var treatSelector = document.querySelector('.treat');
@@ -50,7 +51,7 @@ const randomWeekendCrap = () => {
 }
 
 const Layout = ({data}) => {
-  const { edges } = data.allMarkdownRemark
+  // const { edges } = data.allMarkdownRemark
   return (
     <div>
       <div className="media-object">
