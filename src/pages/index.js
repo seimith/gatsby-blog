@@ -57,12 +57,12 @@ const Layout = ({data}) => {
       <div className="media-object">
         <img src={randomMe()} alt="Me doing things." className="avatar"/>
         <h1>Kaixo!</h1>
-        <p>I <Link to='/categories/code' title='Technical posts.'>code</Link> some <Link to='/tags' title='All post categories.'>things</Link>, <Link to='/categories/design' title='Design related posts.'>design</Link> sometimes, and I <a href="#" className="weekend" target="_blank" onClick={randomWeekendCrap}>do random stuff</a> on the weekends.</p>
-        <p>On <a href="https://twitter.com/themcsuth/" target="_blank" title="Twitter.">social</a> media I'm pretty dead.</p>
-        <p>- "<a href="https://www.linkedin.com/in/seimith/" target="_blank" title="Reach out to me on LinkedIn for work-related inquiries.">Smith</a>"</p>
+        <p>I <Link to='/categories/code' title='Technical posts.'>code</Link> some <Link to='/tags' title='All post categories.'>things</Link>, <Link to='/categories/design' title='Design related posts.'>design</Link> sometimes, and I <a href="#" className="weekend" target="_blank" without rel="noopener noreferrer" onClick={randomWeekendCrap}>do random stuff</a> on the weekends.</p>
+        <p>On <a href="https://twitter.com/themcsuth/" target="_blank" without rel="noopener noreferrer" title="Twitter.">social</a> media I'm pretty dead.</p>
+        <p>- "<a href="https://www.linkedin.com/in/seimith/" target="_blank" without rel="noopener noreferrer" title="Reach out to me on LinkedIn for work-related inquiries.">Smith</a>"</p>
       </div>
       <div className="special-treat">
-        🍭 Here's a <a href="#" className="treat" target="_blank" onClick={getYoTreat}>video</a>.
+        <span role="img" aria-label="lolly">🍭</span> Here's a <a href="#" className="treat" target="_blank" onClick={getYoTreat}>video</a>.
       </div>
     </div>
   )

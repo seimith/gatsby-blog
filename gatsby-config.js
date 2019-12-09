@@ -2,8 +2,8 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: 'My Blog',
-    description: 'This is my cool blog.'
+    title: 'Waddap! | Seimith.io',
+    description: 'I be Smith and this is my website.'
   },
   plugins: [
     `gatsby-transformer-remark`,
