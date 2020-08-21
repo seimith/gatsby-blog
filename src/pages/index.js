@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet"
 import { Link, graphql } from 'gatsby';
 
 const randomMe = () => {
@@ -70,6 +71,10 @@ class Layout extends React.Component {
     // this.props.data
     return (
       <>
+        <Helmet>
+          <title>Kaixo! It's some random weekend.</title>
+          <link rel="icon" type="image/png" href="assets/favicon.ico" />
+        </Helmet>
         <div className="media-object">
           <img src={randomMe()} alt="Me doing things." className="avatar"/>
           <h1>Kaixo!</h1>
