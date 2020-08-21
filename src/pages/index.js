@@ -5,6 +5,9 @@ const randomMe = () => {
   var avatar = [
     {url: 'assets/me1.png'},
     {url: 'assets/me2.jpg'},
+    {url: 'assets/me3.jpg'},
+    {url: 'assets/me4.jpg'},
+    {url: 'assets/me5.png'},
   ];
   var randomIndex = Math.floor(Math.random() * avatar.length - 1) + 1;
   var imageSource = avatar[randomIndex].url;
@@ -43,30 +46,44 @@ const randomWeekendCrap = () => {
     {title: "organize my Carmex collection", url: 'https://www.instagram.com/p/BYFXAugDQ3i/'},
     {title: "work on my secret business plan", url: 'https://www.instagram.com/p/BzIlG0-pwyy/'},
     {title: "bake short bread", url: 'https://www.instagram.com/p/Bsn3AMSg9NX/'},
-    {title: "rewatch Bob's Burgers", url: 'https://getyarn.io/yarn-clip/c5df929a-9ae0-4cdc-b398-df41a211d2c1'},
+    {title: "rewatch Bob's Burgers", url: 'https://www.youtube.com/watch?v=Z9ZIuoQDtL0'},
   ];
   var weekendSelector = document.querySelector('.weekend');
   var randomWeekendIndex = Math.floor(Math.random() * randomWeekendActivities.length - 1) + 1;
-  weekendSelector.href = randomWeekendActivities[randomWeekendIndex].url;
+  setTimeout(function(){
+    weekendSelector.href = randomWeekendActivities[randomWeekendIndex].url;
+    weekendSelector.innerHTML = randomWeekendActivities[randomWeekendIndex].title;
+  }, 1000);
 }
 
-const Layout = ({data}) => {
-  // const { edges } = data.allMarkdownRemark
-  return (
-    <div>
-      <div className="media-object">
-        <img src={randomMe()} alt="Me doing things." className="avatar"/>
-        <h1>Kaixo!</h1>
-        <p>I <Link to='/categories/code' title='Technical posts.'>code</Link> some <Link to='/tags' title='All post categories.'>things</Link>, <Link to='/categories/design' title='Design related posts.'>design</Link> sometimes, and I <a href="#" className="weekend" target="_blank" without rel="noopener noreferrer" onClick={randomWeekendCrap}>do random stuff</a> on the weekends.</p>
-        <p>On <a href="https://twitter.com/themcsuth/" target="_blank" without rel="noopener noreferrer" title="Twitter.">social</a> media I'm pretty dead.</p>
-        <p>- "<a href="https://www.linkedin.com/in/seimith/" target="_blank" without rel="noopener noreferrer" title="Reach out to me on LinkedIn for work-related inquiries.">Smith</a>"</p>
-      </div>
-      <div className="special-treat">
-        <span role="img" aria-label="lolly">🍭</span> Here's a <a href="#" className="treat" target="_blank" onClick={getYoTreat}>video</a>.
-      </div>
-    </div>
-  )
-};
+class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  componentDidMount() {
+    randomWeekendCrap();
+  }
+
+  render() {
+    // this.props.data
+    return (
+      <>
+        <div className="media-object">
+          <img src={randomMe()} alt="Me doing things." className="avatar"/>
+          <h1>Kaixo!</h1>
+          <p>I <Link to='/categories/code' title='Technical posts.'>code</Link> some <Link to='/tags' title='All post categories.'>things</Link>, <Link to='/categories/design' title='Design related posts.'>design</Link> sometimes, and I <a href="#yoyoyo" className="weekend" target="_blank" without rel="noopener noreferrer" onClick={randomWeekendCrap}>do random stuff</a> on the weekends.</p>
+          <p>On <a href="https://twitter.com/themcsuth/" target="_blank" without rel="noopener noreferrer" title="Twitter.">social</a> media I'm pretty dead.</p>
+          <p>- "<a href="https://www.linkedin.com/in/seimith/" target="_blank" without rel="noopener noreferrer" title="Reach out to me on LinkedIn for work-related inquiries.">Smith</a>"</p>
+        </div>
+        <div className="special-treat">
+          <span role="img" aria-label="lolly">🍭</span> Here's a <a href="#coolcoolcool" className="treat" target="_blank" onClick={getYoTreat}>treat</a>.
+        </div>
+      </>
+    );
+  }
+}
 
 export const query = graphql`
   query HompageQuery {
