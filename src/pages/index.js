@@ -5,10 +5,7 @@ import { Link, graphql } from 'gatsby';
 const randomMe = () => {
   var avatar = [
     {url: 'assets/me1.png'},
-    {url: 'assets/me2.jpg'},
-    {url: 'assets/me3.jpg'},
-    {url: 'assets/me4.jpg'},
-    {url: 'assets/me5.png'},
+    // {url: 'assets/me2.png'},
   ];
   var randomIndex = Math.floor(Math.random() * avatar.length - 1) + 1;
   var imageSource = avatar[randomIndex].url;
