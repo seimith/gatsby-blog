@@ -76,7 +76,7 @@ class Layout extends React.Component {
           <img src={randomMe()} alt="Me doing things." className="avatar"/>
           <h1>Kaixo!</h1>
           <p>I <Link to='/categories/code' title='Technical posts.'>code</Link> some <Link to='/tags' title='All post categories.'>things</Link>, <Link to='/categories/design' title='Design related posts.'>design</Link> sometimes, and I <a href="#yoyoyo" className="weekend" target="_blank" without rel="noopener noreferrer" onClick={randomWeekendCrap}>do random stuff</a> on the weekends.</p>
-          <p>On <a href="https://twitter.com/themcsuth/" target="_blank" without rel="noopener noreferrer" title="Twitter.">social</a> media I'm pretty dead.</p>
+          <p>On <a href="https://github.com/seimith" target="_blank" without rel="noopener noreferrer" title="I'm dead on social media, so here's my github account.">social</a> media I'm pretty dead.</p>
           <p>- "<a href="https://www.linkedin.com/in/seimith/" target="_blank" without rel="noopener noreferrer" title="Reach out to me on LinkedIn for work-related inquiries.">Smith</a>"</p>
         </div>
         <div className="special-treat">
